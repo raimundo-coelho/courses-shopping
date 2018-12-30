@@ -1,0 +1,53 @@
+<ion-content>
+    <section id="hero_in" class="general" style="background: url(../../../assets/images/slide_1.jpg) center center no-repeat;">
+        <div class="wrapper">
+            <div class="container">
+                <h1 class="fadeInUp">
+                    <span></span>
+                    Cursos com nossos <br/>Especialistas
+                </h1>
+                <p>Formação completa na Área da Beleza</p>
+            </div>
+        </div>
+    </section>
+    <!--/hero_in-->
+
+    <style>
+        ion-grid {
+            --ion-grid-padding-md: 20;
+        }
+
+        ion-col {
+            border: solid 0px #cccccc;
+        }
+
+        ion-card-content {
+            height: 100px;
+        }
+    </style>
+
+
+    <ion-row class="ion_row_app" style="margin-bottom: 50px">
+        <div class="col-sm-12 col-md-3 col-xl-3" style="padding: 0px" *ngFor="let course of courses">
+            <ion-card style="margin-bottom: 15px">
+                <ion-img src="assets/images/slide_2_thumb.jpg"></ion-img>
+                <ion-card-header>
+                    <ion-card-title>{{ course.name }}</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                    <p>{{ course.description }}</p>
+                </ion-card-content>
+
+                <ion-row class="card_footer">
+                    <ion-col>
+                        <ion-button color="success"  expand="block" [routerLink]="['/course/' + course.id]">DETALHES</ion-button>
+                    </ion-col>
+                </ion-row>
+
+
+            </ion-card>
+        </div>
+    </ion-row>
+
+
+</ion-content>

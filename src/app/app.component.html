@@ -1,0 +1,73 @@
+<ion-app>
+
+    <ion-header>
+        <ion-toolbar class="toolbar_menu">
+
+            <ion-buttons slot="secondary" id="menuDesktop">
+                <ion-button routerLink="/courses" routerLinkActive="active" color="medium">Cursos</ion-button>
+                <ion-button routerLink="/forum" routerLinkActive="active" color="medium">Forum</ion-button>
+                <ion-button routerLink="/certificate" routerLinkActive="active" color="medium">Certificado</ion-button>
+                <ion-button routerLink="/contact" routerLinkActive="active" color="medium">Contato</ion-button>
+            </ion-buttons>
+
+
+            <ion-buttons slot="end">
+                <ion-button>
+                    <ion-badge color="primary" style="font-size: 0.6rem;">5</ion-badge>
+                    <ion-icon name="cart"></ion-icon>
+                </ion-button>
+
+                <ion-button>
+                    <ion-icon name="person"></ion-icon>
+                </ion-button>
+            </ion-buttons>
+
+            <ion-buttons slot="end">
+                <ion-menu-toggle color="medium" style="font-size: 1.8rem; margin-top: 5px">
+                    <ion-icon name="menu"></ion-icon>
+                </ion-menu-toggle>
+            </ion-buttons>
+
+            <ion-title>
+                <ion-img class="logo"
+                         src="https://s3-sa-east-1.amazonaws.com/multipla-uploads/helpers/logo-blz.png"></ion-img>
+
+            </ion-title>
+
+        </ion-toolbar>
+    </ion-header>
+
+
+    <ion-menu class="my-menu" side="start">
+        <ion-header class="header_my_menu">
+            <ion-toolbar class="bgHeader">
+                <ion-title>
+                    <ion-img style="margin-top: 5px;" class="logo"
+                             src="https://s3-sa-east-1.amazonaws.com/multipla-uploads/helpers/logo-blz.png"></ion-img>
+
+                </ion-title>
+            </ion-toolbar>
+        </ion-header>
+        <ion-content>
+            <ion-list>
+                <ion-item>Menu Item</ion-item>
+                <ion-item>Menu Item</ion-item>
+                <ion-item>Menu Item</ion-item>
+                <ion-item>Menu Item</ion-item>
+                <ion-item>Menu Item</ion-item>
+            </ion-list>
+        </ion-content>
+    </ion-menu>
+
+
+    <ion-router-outlet main></ion-router-outlet>
+
+
+    <ion-footer>
+        <ion-toolbar>
+            <ion-title style="font-size: 0.7rem">Developer By Ideale Digital</ion-title>
+        </ion-toolbar>
+    </ion-footer>
+
+
+</ion-app>

@@ -1,0 +1,44 @@
+ion-header {
+  background-color: #f7f8f9;
+  border-bottom: solid 2px #f29121;
+
+  ion-toolbar {
+    padding-right: 10px;
+
+    ion-title {
+      ion-img {
+        margin-top: 3px;
+      }
+    }
+
+    #menuDesktop {
+      display: none;
+    }
+
+    ion-menu-toggle {
+      display: block;
+    }
+  }
+
+  @media only screen and (min-width: 600px) {
+    ion-toolbar {
+      padding-right: 10px;
+
+      ion-title {
+        ion-img {
+          width: 192px;
+          border: solid 0px #cccccc;
+          margin-top: 3px;
+        }
+      }
+
+      #menuDesktop {
+        display: block;
+      }
+
+      ion-menu-toggle {
+        display: none;
+      }
+    }
+  }
+}
